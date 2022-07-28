@@ -1,0 +1,735 @@
+@font-face {
+    font-family: 'android';
+    src: url('../src/fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+:root {
+    font-size: 62.5%;
+    --font-android: 'android', 'cursive';
+    --cor0: #d6dff8;
+    --cor1: #7995e3;
+    --cor2: #ed863c;
+    --cor3: #334289;
+    --cor4: #b05ea5;
+    --cor5: rgb(7, 6, 6);
+    --cor6: var(--cor1);
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.20);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 238, 255, 0.576);  
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--cor3);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    margin-inline: auto;
+    width: min(58rem, 100%);
+    text-align: justify;
+}
+
+li {
+    line-height: 2rem;
+    text-align: justify;
+    font-size: 1.8rem;
+    padding-block: 1rem;
+}
+
+body {
+    background-color: var(--cor1);
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    overflow: overlay;
+}
+
+body .print {
+    width: 100%;
+}
+
+/* ============= navigation ============= */
+
+nav {
+    background-image: linear-gradient(to top, var(--cor0), var(--cor1));
+    height: 6.5rem;
+    width: 40rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: auto;
+    padding: 1rem 2.4rem;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0rem -1rem 1rem rgba(0, 0, 0, 0.244);
+}
+
+nav img {
+    height: 6rem;
+    padding-bottom: 1rem;
+}
+
+nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* =============== main ============== */
+
+main {
+    width: min(58rem, 100%);
+    margin-inline: auto;
+    margin-top: 5rem;
+    padding-top: 5rem;
+    padding-inline: 1rem;
+    background-color: var(--cor0);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.244);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+main .box{
+    background: var(--cor1);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: inset 0rem 0rem 2rem rgba(0, 0, 0, 0.676);
+}
+
+main h1 {
+    font-family: 'android';
+    font-size: 6rem;
+    font-weight: normal;  
+    color: white;
+}
+
+main h2 {
+    font-family: 'android';
+    font-size: 3rem;
+    padding-block: 3rem;
+}
+
+main p {
+    line-height: 2.2rem;
+    text-align: justify;
+    text-indent: 3rem;
+    font-size: 1.8rem;
+    padding-block: 1rem;
+}
+
+main .desenho {
+    height: 100%;
+}
+
+main .luan {
+    width: 100%;
+}
+
+main .video {
+    padding-bottom: 7rem;
+}
+
+.video-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    font-family: var(--font-android);
+    padding-top: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+}
+
+main .h3 {
+    padding-top: 5rem;
+    line-height: 5rem;
+    font-size: 4rem;
+    color: var(--cor3);
+}
+
+main .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 3rem;
+    width: 100%;
+}
+
+main .content {
+    border-radius: 2rem;
+    overflow: hidden;
+    justify-self: center;
+}
+
+main .content .slide img {
+    height: 100%;
+    width: 100%;
+}
+
+main .slide-navigation {
+    bottom: 16rem;
+    left: 85rem;
+    display: flex;
+}
+
+main .bar {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: .2rem solid black;
+    margin: .6rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transform: .5s ease;
+}
+
+main .bar:hover {
+    background-color: black;
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    height: 100%;
+}
+
+.slide {
+    width: 33.333%;
+    transition: .6s;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -33.33%;
+}
+
+#slide3:checked ~ .s1 {
+    margin-left: -66.66%;
+}
+
+#html {
+    width: min(58rem, 100%);
+    margin-inline: auto;
+    margin-top: 5rem;
+    padding: 5rem 3rem;
+    background-color: var(--cor0);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.244);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+#html h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'android';
+    font-size: 3rem;
+    padding-block: 3rem;
+}
+
+#centro h2 {
+    font-size: 2.63rem;
+}
+
+#html p {
+    line-height: 2.2rem;
+    text-align: justify;
+    text-indent: 3rem;
+    font-size: 1.8rem;
+    padding-block: 1rem;
+}
+
+#html img {
+    padding-block: 3rem;
+    width: 100%;
+}
+
+#css {
+    width: min(58rem, 100%);
+    margin-inline: auto;
+    margin-top: 5rem;
+    padding: 9rem 4rem 4rem 4rem
+    ;
+    background-color: var(--cor0);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.244);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+#css h2 {
+    font-family: 'android';
+    font-size: 3rem;
+    padding-block: 1rem;
+}
+
+#css p {
+    line-height: 2.2rem;
+    text-align: justify;
+    text-indent: 3rem;
+    font-size: 1.8rem;
+    padding-block: 1rem;
+}
+
+#js {
+    width: min(58rem, 100%);
+    margin-inline: auto;
+    margin-top: 5rem;
+    padding: 9rem 4rem 4rem 4rem
+    ;
+    background-color: var(--cor0);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.244);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+#js h2 {
+    font-family: 'android';
+    font-size: 3rem;
+    padding-block: 1rem;
+}
+
+#js p {
+    line-height: 2.2rem;
+    text-align: justify;
+    text-indent: 3rem;
+    font-size: 1.8rem;
+    padding-block: 1rem;
+}
+
+#js img {
+    padding-block: 3rem;
+}
+
+.intro {
+    padding-top: 3rem;
+}
+
+main .html,
+main .css,
+main .js {
+    background-color: var(--cor0);
+    height: 100%;
+    width: 100%;
+}
+
+/* ============= footer ============== */
+
+footer {
+    height: 20rem;
+    border-radius: 1rem;
+    padding-inline: 0;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+}
+
+footer .footer1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .footer2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footer2 p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-indent: 0;
+}
+
+footer img {
+    height: 7rem;
+}
+
+/* ============backToTopButton ============ */
+
+#backToTopButton {
+    position: fixed;
+    bottom: 2rem;
+    right: 3rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100%);
+    transition: 180ms;
+    background: transparent;
+}
+
+#backToTopButton.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#backToTopButton circle {
+    fill: rgba(0, 0, 0, 0.737);
+}
+
+/* ============ menu-expanded ============= */
+
+body.menu-expanded {
+    overflow: hidden;
+}
+
+body.menu-expanded > :not(nav) {
+    display: none;
+}
+
+.menu,
+.close-menu,
+body.menu-expanded .open-menu {
+    opacity: 0;
+    visibility: hidden;
+}
+
+body.menu-expanded .menu,
+body.menu-expanded .close-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+body.menu-expanded .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--cor0);
+    width: 100%;
+    height: 100vh;
+    transition: .5s;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.itens {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.itens a {
+    color: var(--cor3);
+    text-decoration: none;
+    font-family: var(--font-android);
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+    transition: .4s;
+}
+
+.itens a:hover {
+    background: var(--cor3);
+    color: var(--cor0);
+    font-weight: normal;
+    border-radius: 4rem;
+}
+
+.itens h2 {
+    color: var(--cor0);
+    padding: 1.2rem;
+    background: var(--cor3);
+    width: 40rem;
+    text-align: center;
+}
+
+.menu-expanded .close-menu,
+.menu-expanded .logo {
+   position: relative; 
+   z-index: 5;
+}
+
+.convite {
+    background-color: var(--cor1);
+    box-shadow: inset 0rem 0rem 2rem rgba(0, 0, 0, 0.676);
+    padding: 5rem;
+    border-radius: 1rem;
+    line-height: 3rem;
+    width: min(58rem, 100%);
+    margin-inline: auto;
+    text-align: justify;
+}
+
+.convite h2 {
+    line-height: 5rem;
+    color: white;
+    font-size: 3rem;
+}
+
+.convite p {
+    color: white;
+    font-size: 2rem;
+    letter-spacing: .2rem;
+}
+
+.h4 h4 {
+    display: block;
+    width: 100%;
+    color: var(--cor3);
+    padding: 3rem 1rem;
+    text-align: justify;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: .5rem;
+}
+
+.img-exercicio {
+    width: 30rem;
+    height: 30rem;
+}
+
+.img-exercicio img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    transition: .3s;
+}
+
+.img-exercicio img:hover {
+    transform: scale(1.1);
+}
+
+.img-exercicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.img-exercicios h4 {
+    font-size: 2rem;
+}
+
+.sub-titulo-exercicio {
+    width: 40rem;
+}
+
+/* ========= responsivo =========== */
+
+@media (min-width: 1000px) {
+
+    .wrapper {
+        width: min(100%);
+        padding-inline: 3rem;
+    }
+
+    body .wrapper * {
+        margin: 0;
+        padding: 0;
+        visibility: initial;
+        display: initial;
+        opacity: initial;
+        flex-direction: initial;
+        position: initial;
+        font-size: initial;
+        font-weight: initial;
+        transform: initial;
+        color: initial;
+    }
+
+    body .close-menu,
+    body .open-menu,
+    .itens h2 {
+        display: none;
+    }
+
+    ul {
+        padding-inline: 5rem;
+    }
+
+    main {
+        height: 90vh;
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    main .h3 {
+        color: white;
+    }
+
+    main .bar {
+        border: .2rem solid white;
+    }
+
+    main .bar:hover {
+        background-color: white;
+    }
+
+    main .content {
+        height: 50rem;
+        width: 60rem;
+        box-shadow: 0 0 1rem .5rem rgba(0, 0, 0, 0.493);
+    }
+
+    .video {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .video iframe {
+        width: 60%;
+    }
+
+    #html {
+        width: 100%;
+    }
+
+    .html {
+        width: 70%;
+        margin: auto;
+    }
+
+    #css {
+        width: 100%;
+    }
+
+    #js {
+        width: 100%;
+    }
+
+    main .box {
+        height: 70%;
+        padding-left: 3rem;
+        margin-block: auto;
+        box-shadow: inset 0rem 0rem 2rem rgba(0, 0, 0, 0.676);
+    }
+
+    .h4 {
+        padding-block: 4rem;
+    }
+
+    nav {
+        width: 100%;
+        height: 8rem;
+    }
+
+    .itens a{
+        padding: 1rem;
+    }
+
+    header {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: end;
+        padding: 0;
+    }
+
+    .luan {
+        height: 100%;
+    }
+
+    header .luan img {
+        float: right;
+    }
+
+    header .h1 h1 {
+        float: left;
+        font-size: 6rem;
+        padding-block: 3rem; 
+        color: white;    
+    }
+
+    .h4 {
+        width: 70vw;
+    }
+
+    .h4 h4 {
+        display: flex;
+        color: white;
+        padding: 4rem;
+        text-align: justify;
+        font-size: 2.8rem;
+        font-weight: bold;
+        border-radius: .5rem;
+    }
+
+    .convite {
+        background-color: var(--cor0);
+        box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.676);
+        padding: 5rem;
+        border-radius: 1rem;
+        line-height: 3rem;
+        width: 100%;
+    }
+
+    .convite h2 {
+        line-height: 5rem;
+        color: black;
+    }
+
+    .convite p {
+        padding-inline: 10rem;
+        color: black;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    footer .footer2 {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    footer .footer2 p {
+        font-size: 2rem;
+    }
+
+    .img-exercicios {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}

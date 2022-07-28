@@ -1,0 +1,80 @@
+:root {
+    --cor7: rgb(108, 98, 166);
+}
+
+
+nav {
+    background: var(--cor7);
+}
+
+main {
+    padding-top: 8rem;
+}
+
+img {
+    border: .1rem solid #00000030;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+@media screen and (min-width: 768px) {
+    .exercicios {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    footer {
+        height: 12rem;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        max-width: 90rem;
+        margin-inline: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        max-width: 120rem;
+        margin-inline: auto;
+    }
+
+    .exercicios {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .main2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --navHeightMobile: 6rem;
+    --cor1: rgb(240, 240, 240);
+    --cor2: #c84b64;
+    --cor3: rgb(19, 18, 18);
+    --cor4: rgb(254, 129, 3);
+    --cor5: rgb(19, 1, 17);
+    --cor6: rgba(165, 151, 242, 0.4);
+    --cor7: rgb(108, 98, 166);
+}
+
+::-webkit-scrollbar {
+    width: .6rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--cor6);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor7);  
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--cor5);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+
+.nav1 {
+    padding: 1rem 2rem;
+    height: var(--navHeightMobile);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo,
+.logo img {
+    height: 100%;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 3.5rem;
+    height: .5rem;
+    background-color: var(--cor1);
+    margin: .6rem 0;
+    transition: .4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-0.9rem, .6rem);
+    transform: rotate(-45deg) translate(-0.9rem, .6rem);
+    }
+    
+.change .bar2 {
+    opacity: 0;
+    }
+    
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-0.8rem, -0.8rem);
+    transform: rotate(45deg) translate(-0.8rem, -0.8rem);
+    }
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.menu {
+    height: 0;
+    transition: .4s;
+    background-image: url('../images/home/back-menu.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main2 {
+    padding-top: var(--navHeightMobile);
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+.itensMenu {
+    display: none;
+    width: 100%;
+    height: calc(100vh - var(--navHeightMobile) - 2rem);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6rem;
+    padding-top: 4rem;
+    font-size: 3rem;
+    list-style: none;
+    color: var(--cor1);
+    font-weight: bold;
+}
+
+main #animation {
+    height: 62.5rem;
+}
+
+.mainItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+}
+
+.mainItem h2 {
+    font-size: 2.8rem;
+}
+
+.mainItens p {
+    text-indent: 4rem;
+    font-size: 1.8rem;
+    text-align: justify;
+    padding-block: 3rem;
+}
+
+.mainItem a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    width: 8em;
+    height: 3rem;
+    background-color: var(--cor4);
+    color: var(--cor1);
+    border-radius: 2.5rem;
+    text-decoration: none;
+}
+
+.mainItem a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 1.5rem;
+    font-size: 1.8rem;
+    background-color: var(--cor7);
+    color: var(--cor1);
+}
+
+footer p {
+    display: flex;
+    gap: .5rem;
+}
+
+footer a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        display: none;
+    }
+
+    nav {
+        height: 8rem;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu {
+        height: 100%;
+        background: none;
+    }
+
+    .itensMenu {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        font-size: 2rem;
+        padding: 0;
+        padding-right: 2rem;
+        gap: 2rem;
+    }
+
+    .mainItem {
+        padding: 3rem 5rem;
+    }    
+}
+
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (min-width: 1000px) {
+    .gridIndex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .gridIndex {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
