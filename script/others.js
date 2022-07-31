@@ -68,3 +68,21 @@ function openMenu() {
         document.querySelector(".menu4").style.color = '#f0f0f0';
     }
 }
+
+function resumoHtml() {
+    document.querySelector(".resumoCss").classList.remove('show');
+    document.querySelector(".resumoJs").classList.remove('show');
+    document.querySelector(".resumoHtml").classList.toggle('show');
+}
+
+function resumoCss() {
+    document.querySelector(".resumoHtml").classList.remove('show');
+    document.querySelector(".resumoJs").classList.remove('show');
+    document.querySelector(".resumoCss").classList.toggle('show');
+}
+
+function resumoJs() {
+    document.querySelector(".resumoCss").classList.remove('show');
+    document.querySelector(".resumoHtml").classList.remove('show');
+    document.querySelector(".resumoJs").classList.toggle('show');
+}

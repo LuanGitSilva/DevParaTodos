@@ -8,7 +8,7 @@ function onScroll() {
 function myFunction(x) {
     document.querySelector(".container").classList.toggle("change");
     openMenu();
-}
+}   
 
 const open = document.querySelector(".menu");
 const nav = document.querySelector(".nav1");

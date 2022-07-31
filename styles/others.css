@@ -2,7 +2,6 @@
     --cor7: rgb(108, 98, 166);
 }
 
-
 nav {
     background: var(--cor7);
 }
@@ -36,6 +35,36 @@ h4 {
 
 p {
     font-size: 1.8rem;
+}
+
+.resumo p {
+    text-align: justify;
+    text-indent: 4rem;
+    padding-block: 3rem;
+}
+
+.resumo h3 {
+    padding-top: 3rem;
+}
+
+.resumo ul {
+    padding-top: 2rem;
+}
+
+.resumo li {
+    list-style: none;
+    font-size: 1.8rem;
+    padding-block: 1rem;
+}
+
+.resumoHtml,
+.resumoCss,
+.resumoJs {
+    display: none;
+}
+
+.show {
+    display: block;
 }
 
 @media screen and (min-width: 768px) {

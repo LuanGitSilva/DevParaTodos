@@ -197,43 +197,230 @@
             </ul>
         </div>
     </nav>
-    <main class="main2">
-        <div class="mainItens">
-            <h2 class="mainItem">
-                Introdução ao HTML <br>
-                (HyperText Markup Language)
-            </h2>
-            <p class="mainItem">
-                Juntos iremos passar um pente fino sobre o HTML. Você irá entender o que é essa sigla, como ela foi criada e como ela pode ser útil para o mundo da tecnologia.
-            </p>
-            <p class="mainItem">
-                Leia atentamente e se for preciso volte a leitura para entender afundo sobre o HTML.
-            </p>
+    <main>
+        <div class="main2">
+            <div class="mainItens">
+                <h2 class="mainItem">
+                    Introdução ao HTML <br>
+                    (HyperText Markup Language)
+                </h2>
+                <p class="mainItem">
+                    Juntos iremos passar um pente fino sobre o HTML. Você irá entender o que é essa sigla, como ela foi criada e como ela pode ser útil para o mundo da tecnologia.
+                </p>
+                <p class="mainItem">
+                    Leia atentamente e se for preciso volte a leitura para entender afundo sobre o HTML.
+                </p>
+                <div class="mainItem">
+                    <a onclick="resumoHtml()" href="#resumo">
+                        LER ARTIGO
+                    </a>
+                </div>
+            </div>
+            <!-- -------------------------------------- -->
+            <div class="mainItens">
+                <h2 class="mainItem">
+                    Introdução ao CSS <br>
+                    (Cascading Style Sheets)
+                </h2>
+                <p class="mainItem">
+                    Aqui aprenderemos sobre o CSS, e mais uma vez iremos passar um pente fino e aprender afundo os detalhes essenciais para aprendermos o máximo sobre essa forma de estilização e como poderemos utilizá-la em nossos projetos.
+                </p>
+                <p class="mainItem">
+                    Leia atentamente e se for preciso volte a leitura para entender o máximo possível sobre o CSS.
+                </p>
+                <div class="mainItem">
+                    <a onclick="resumoCss()" href="#resumo">
+                        LER ARTIGO
+                    </a>
+                </div>
+            </div>
+            <!-- -------------------------------------- -->
+            <div class="mainItens">
+                <h2 class="mainItem">
+                    Introdução ao JavaScript
+                </h2>
+                <p class="mainItem">
+                    Agora iremos reunir todas as nossas curiosidades e descobrir o mundo mágico do JavaScript. Essa linguagem de programação vai abrir sua mente e mostrar que o inimaginável pode ser reálizado com a ajuda desse cara.
+                </p>
+                <p class="mainItem">
+                    Leia atentamente e se for preciso volte a leitura para entender o máximo sobre esse assunto.
+                </p>
+                <div class="mainItem">
+                    <a onclick="resumoJs()" href="#resumo">
+                        LER ARTIGO
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="mainItens">
-            <h2 class="mainItem">
-                Introdução ao CSS <br>
-                (Cascading Style Sheets)
-            </h2>
-            <p class="mainItem">
-                Aqui aprenderemos sobre o CSS, e mais uma vez iremos passar um pente fino e aprender afundo os detalhes essenciais para aprendermos o máximo sobre essa forma de estilização e como poderemos utilizá-la em nossos projetos.
-            </p>
-            <p class="mainItem">
-                Leia atentamente e se for preciso volte a leitura para entender o máximo possível sobre o CSS.
-            </p>
+        <!-- -------------------------------------- -->
+        <div class="resumo mainItem" id="resumo">
+            <div class="resumoHtml">
+                <h3>
+                    O que é HTML?
+                </h3>
+                <p>
+                    A sigla HTML significa HyperText Markup Language (Linguagem de Marcação de HiperTexto), e sua versão mais atualizada é o HTML5. Para explicar de uma forma mais fácil de entender, nós utilizamos o HTML para inserir conteúdo em uma página web e esse conteúdo tem um sentido. A intenção é inserir o conteúdo em uma organização através de tags e esse conteúdo não aparece com uma aparência na qual estamos acostumados no dia a dia, mas temos que lembrar que a intenção é inserir o conteúdo e não a estilização, esse é o papel do CSS que será o nosso próximo tópico. Para ficar melhor de associar, pensaremos no HTML como um corpo, o CSS como as roupas e os movimentos do corpo como o JavaScript (que também veremos logo mais).
+                </p>
+                <h3>
+                    Algumas tags HTML
+                </h3>
+                <p>
+                    Agora veremos algumas tags HTML, lembrando que não são todas e que não é regra ter que decorar todas de início, com o passar do tempo e com a prática você irá memorizar todas as mais utilizadas nos seus projetos.
+                    Cada tag tem em sua constituição um código que define qual será a sua função dentro do documento, por exempo a tag "p" que defique um parágrafo.
+                </p>
+                <ul>
+                    <li>
+                        h1 - essa é uma tag de título, sendo a tag de título mais forte. Em cada página devemos utilizar apenas uma tag h1. Em seguida temos h2, h3, h4, h5 e h6. Cada uma delas tem um grau de importância, sendo em ordem decrescente.
+                    </li>
+            
+                    <li>
+                        p - é a tag para criar parágrafos.
+                    </li>
+                    <li>
+                        ul - tag utilizada para listas desordenadas.
+                    </li>
+                    <li>
+                        ol - tag para criar listas ordenadas.
+                    </li>
+                    <li>
+                        li - tag que insere os elementos de uma lista. Cada li é um elemento.
+                    </li>
+                    <li>
+                        button - tag utilizada para inserir um botão no código.
+                    </li>
+                    <li>
+                        img - para inserir uma imagem.
+                    </li>
+                    <li>
+                        video - insere vídeos ao código.
+                    </li>
+                    <li>
+                        script - essa tag é usada para inserir JavaScript ao código, podendo fazer no mesmo arquivo. Mas o mais aconselhado é criar um arquivo novo apenas para o JS.
+                    </li>
+                    <li>
+                        link - com essa tag podemos inserir um link de para uma página com os arquivos CSS, inserir um favicon e outras funções.
+                    </li>
+                </ul>
+                <h3>
+                    Quem criou o HTML?
+                </h3>
+                <p>
+                    Tim Berners-Lee é o nome dele, o cara que criou o nosso querido HTML. Em 1991 o HTML foi criado para facilitar o envio de documentos por instituições de pesquisas e em 1992 ele foi liberado para uso mundial na internet com a biblioteca World Wide Web que conhecemos como WWW.
+                </p>
+                <h3>
+                    Para quê serve o HTML e como utilizar?
+                </h3>
+                <p>
+                    Com o HTML podemos criar documentos de páginas web, podemos criar e inserir os conteúdos de uma página com ele. Lembrando que com ele todo conteúdo inserido deve ter um sentido e não apenas por simples aparência, a parte de estilização fica por conta do CSS por exemplo.
+                    Para criar códigos com HTML só precisamos ter um editor de código instalado em nosso computador. Tendo como exemplo o Visual Studio Code mais conhecido como VSCode. Ao realizar a instalação do mesmo nós temos as opções de criar arquivos ".html" ".css" e ".js".
+                </p>
+            </div>
+            <!-- -------------------------------------- -->
+            <div class="resumoCss">
+                <h3>
+                    O que é CSS?
+                </h3>
+                <p>
+                    Agora vamos ter uma breve noção de CSS (Cascading Style Sheets). E antes de iniciar vamos esclarecer que tanto o HTML quanto o CSS não são considerados linguagens de programação, mas com a grande evolução de configurações do CSS já existem alguns pensamentos de comparação entre algumas funções do CSS e do JavaScript.
+                    Como mensionado antes, uma forma mais fácil de entender o CSS é saber que ele é apenas para estilização do documento, com ele podemos adicionar cores, alterar o tamanho do conteúdo inserido, escolher a ordem e a posição de cada item, entre muitas outras coisas.
+                    A forma mais organizada de usar o CSS é criando um arquivo .css separado do arquivo .htlm (essas são terminações utilizadas no editor de código para dizer qual o conteúdo do arquivo). No final da tag head inserimos uma tag link para ligar o arquivo .html em uso ao arquivo .css que estamos criando para estilizar o documento. E assim, se não houver um arquivo .css já criado, o editor dará a opção de criar um e já o deixa conectado.
+                    Dentro das nossas tag HTML podemos inserir algumas tags CSS, como por exemplo a class e o id, utilizamos essas tags para chamar a configuração da tag HTML no arquivo .css e alterá-la.
+                    Já no arquivo .css podemos inserir, por exemplo, um background-color para mudar a cor de fundo, um color para alterar a cor da letra caso seja um parágrafo, um height para definir a altura, width para definir a largura, font-size/font-weight/font-family para alterações nas letras. Esses são apenas alguns dos muitos comandos que iremos aprender.
+                </p>
+                <h3>
+                    Algumas tags CSS
+                </h3>
+                <ul>
+                    <li>
+                        Font-size - configura o tamanho da fonte.
+                    </li>
+            
+                    <li>
+                        Font-weight - configura o peso da fonte, normalmente uma fonte de letra tem vários tamanhos e pesos, temos o bold que é o negrito e o bolder que é um negrito mais forte dizendo de uma forma mais leiga.
+                    </li>
+                    <li>
+                        Font-family - configura a fonte que será utilizada, dependendo de como a utilizamos podemos configurar a fonte de uma palavra ou de todo o site.
+                    </li>
+                    <li>
+                        Height - configura a altura do item selecionado, caso se defina a altura de uma div por exemplo de 150px ela aparecerá com essa configuração na tela.
+                    </li>
+                    <li>
+                        Width - configura a largura do item selecionado, caso se defina a largura de uma div por exemplo de 150px ela aparecerá com essa configuração na tela.
+                    </li>
+                    <li>
+                        Cursor - define a forma que o cursor irá aparecer quando ele estiver em cima do item, por exemplo o "cursor: pointer" que deixará o cursor em forma de "mão" o que normalmente indica que este item é clicável.
+                    </li>
+                    <li>
+                        Padding - o padding é um preenchimento que inserimos ao item selecionado, podemos usar o padding para inserir em todos os lados, padding block para inserir na parte de cima e de baixo, padding inline para inserir nos lados esquedo e direito, e também podemos usar em um lado específio como padding-top, padding-bottom, padding-left, padding-right.
+                    </li>
+                    <li>
+                        Border - utilizada para inserir uma borda no item selecionado, com ele conseguimos definir a largura da borda, a cor, se ela será contínua ou pontilhada, entre outras coisas.
+                    </li>
+                    <li>
+                        Border-radius - com ele podemos definir uma forma arredondada na borda e também podemos escolher qual ponto da borda será arredondado. Por exemplo se colocar "border-radius: 1px 2px 3px 4px" o lado superior esquerdo terá um arredondamento de 1px, o superior direito de 2px, o inferior direito de 3px e o inferior esquerdo de 4px.
+                    </li>
+                    <li>
+                        Text-decoration - com essa tag conseguimos realizar algumas configurações nos textos, como por exemplo o "text-decoration: underline" que deixa o texto selecionado sublinhado.
+                    </li>
+                </ul>
+                <h3>
+                    Quem criou o CSS?
+                </h3>
+                <p>
+                    Em 1994, Håkon Wium Lie convidou Bert Bos para criarem o projeto do CSS (Cascading Style Sheets). Em 1995 ele apresentaram o projeto e a W3C (World Wide Web Consortium) ficou interessado pelo plano e croiu uma equipe liderada por Håkon Wium Lie e Bert Bos para continuar o desenvolvimento do projeto que veio a ser lançado em 1996 sua primeira versão.
+                </p>
+                <h3>
+                    Para quê serve o CSS e como utilizar?
+                </h3>
+                <p>
+                    O CSS não é uma linguagem de programação mas sim uma forma de estilização do documento que é apresentado na tela. Quando criamos um documento em HTML ele fica praticamente um bloco abaixo do outro, sem nenhum tipo de estilização. Antes era possível realizar algumas estilizações com o HTML, mas isso mudou e vem ficando cada vez mais fora de uso, pois o HTML é um documento que inserimos conteúdo com sentido e não apenas por estilo, a parte de estilização nós deixamos com o CSS.
+                    Para utilizar o CSS nós criamos um arquivo ".css" e ligamos ele com um link ao documento ".html". Também podemos fazer a estilização inline, colocando cada código CSS dentro das tags HTML, mas essa não é uma técnica bem vista pelas boas práticas. Também podemos abrir uma tag style no "head" no HTML e inserir o CSS. Mas também não é recomendado pelas boas práticas da programação.
+                </p>
+            </div>
+            <!-- -------------------------------------- -->
+            <div class="resumoJs">
+                <h3>
+                    O que é JavaScript?
+                </h3>
+                <p>
+                    O JavaScript é uma das linguagens de programação mais conhecidas e antes de continuar precisamos entender que JavaScript e Java são duas linguagens diferentes (vale a pena dar uma estudada). Você já deve ter acessado uma página Web e recebido um sinal de alerta com alguma informação ou até mesmo foi alertado quando esqueceu de digitar uma informação em algum campo ou digitou de forma incorreta, então você já conheceu alguma função desenvolvida pelo JavaScript.
+                </p>
+                <h3>
+                    Algumas coisas que conseguimos fazer com o JavaScript.
+                </h3>
+                <p>
+                    Console.log - com esse comando conseguimos fazer alguns testes de forma que não apareça na tela para o usuário e sim no console do navegador que acessamos nas ferramentas, essa é uma ótima forma de verificar se estamos conseguindo fazer nosso código funcionar.
+                </p>
+                <p>
+                    Document.querySelector - com esse comando conseguimos acessar o primeiro item do documento HTML com aquela característica para fazermos alguma ação com ele. Também temos o querySelectorAll que seleciona todos os itens com aquela característica.
+                </p>
+                <p>
+                    Const - com a constante podemos definir um valor para ela, e ela é muito utilizada no em JS, quando definimos que a "const one = 1" então o valor de one será o número 1, então da próxima vez que formos precisar usar o 1 não precisamos digitar ele e sim a constante one. Com esse exemplo parece não fazer sentido, mas quando estamos fazendo o código isso pode nos ajudar muito.
+                </p>
+                <p>
+                    Let - tem uma funcionalidade parecida com a const, mas normalmente utilizamos quando precisamos de uma constante apenas dentro de uma função.
+                </p>
+                <p>
+                    Var - é uma variável com funcões parecidas com a constante, mas por conseguir alterar seu valor de forma mais fácil ela não é muito recomendada pelas boas práticas. Por exemplo, quando colocamos "var caixa = carro" e depois colocamos "var caixa = moto", o valor é alterado de carro para moto.
+                </p>
+                <p>
+                    Function - com ela conseguimos criar as funções, não é a única forma de criar funções mas é a mais conhecida. Vamos ver um exemplo de uma função completa que irá imprimir na tela a frase "Olá mundo!": <br>
+                    function caixa() { <br>
+                        document.write('Olá mundo!'); <br>
+                    }; <br>
+                    Veja que a função se chama caixa, e ela abre com um " { " e fecha com um " } ";
+                </p>
+                <h3>
+                    Quem criou o JavaScript?
+                </h3>
+                <p>
+                    Com o nome inicial de LiveScript, a linguagem JavaScript foi criada por volta de 1995 por Brendan Eich a pedido da empresa Netscape. Mas a SUN Microsystems também ficou interessada no JS e começou a trabalhar no desenvolvimento da linguagem.
+                </p>
+                <p>
+                    Por a SUN Microsystems já manter a linguagem Java, esse fato fez com que a LiveScript tivesse seu nome alterado para JavaScript. Mas temos que lembrar que Java e JavaScript são linguagens tanto diferentes em seus conceito quanto em seus usos.
+                </p>
+            </div>
         </div>
-        <div class="mainItens">
-            <h2 class="mainItem">
-                Introdução ao JavaScript
-            </h2>
-            <p class="mainItem">
-                Agora iremos reunir todas as nossas curiodidades e descobrir o mundo mágico do JavaScript. Essa linguagem de programação vai abrir sua mente e mostrar que o inimaginável pode ser reálizado com a ajuda desse cara.
-            </p>
-            <p class="mainItem">
-                Leia atentamente e se for preciso volte a leitura para entender o máximo sobre esse assunto.
-            </p>
-        </div>
-
     </main>
     <footer>
         <p>Apresentação profissional</p>
@@ -300,8 +487,7 @@
         <p>Projeto criado por<a href="#"> Luan Silva </a> em 2022.</p>
         <p>Todos os direitos reservados.</p>
     </footer>
-
-    
+   
     <script src="../script/others.js"></script>
 
 </body>
