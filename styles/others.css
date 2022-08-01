@@ -67,6 +67,12 @@ p {
     display: block;
 }
 
+.resumoImagens {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
 @media screen and (min-width: 768px) {
     .exercicios {
         display: grid;
@@ -80,6 +86,12 @@ p {
     
     footer {
         height: 12rem;
+    }
+
+    .resumoImagens {
+        display: grid;
+        grid-template-columns: 42% auto;
+        gap: 3rem;
     }
 
 }

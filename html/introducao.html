@@ -314,6 +314,46 @@
                     Com o HTML podemos criar documentos de páginas web, podemos criar e inserir os conteúdos de uma página com ele. Lembrando que com ele todo conteúdo inserido deve ter um sentido e não apenas por simples aparência, a parte de estilização fica por conta do CSS por exemplo.
                     Para criar códigos com HTML só precisamos ter um editor de código instalado em nosso computador. Tendo como exemplo o Visual Studio Code mais conhecido como VSCode. Ao realizar a instalação do mesmo nós temos as opções de criar arquivos ".html" ".css" e ".js".
                 </p>
+                <div>
+                    <h3>
+                        Agora vamos começar o nosso primeiro exemplo de código em HTML.
+                    </h3>
+                    <p>
+                        Vamos entender aos poucos como funciona a estrutura do nosso documento HTML. Veja que ele inicia dizendo que é um documento HTML, após isso temos o idioma que o documento está escrito e após isso temos o head.
+                    </p>
+                    <p>
+                        Veja que dentro do head temos o charset="UTF-8", que significa praticamente o seguinte: o idioma utilizado nesse documento faz uso de palavras com acentos e cedilha. Pois o idioma português faz uso desses itens.
+                    </p>
+                    <p>
+                        Depois vemos o title que é o título que irá aparecer na guia em seu navegador. Por exemplo, aqui o título é Meu primeiro site.
+                    </p>
+                    <p>
+                        Após a tag head temos a tag body que na tradução significa corpo, e é isso que ela é, o corpo do nosso documento. Dentro do body temos a tag main e dentro dela iremos inserir o nosso conteúdo. Caso Tivéssemos um rodapé iríamos inserir uma tag footer logo após o fechamento da tag main. Mas nesse exercício não iremos utilizar um footer.
+                    </p>
+                    <p>
+                        Abrimos a tag "h1" com o intuito de dizer que esse é o título central do corpo do documento, esse é o título principal. Lembrando que cada página só se deve utilizar um título "h1", mas de "h2" até "h6" podemos utilizar quantos forem necessários. 
+                    </p>
+                    <p>
+                        A tag "p" inserida significa que temos um parágrafo de texto digitado. Digamos que seria um parágrafo de texto de um livro ou de um jornal.
+                    </p>
+                    <p>
+                        A tag "div" utilizada significa em termos menos técnicos que estamos abrindo uma caixa para inserir mais conteúdo dentro dela, isso irá facilitar nosso trabalho principalmente na hora em que estiver-mos estilizando nosso documento ou inserindo funções de programação com o JS.
+                    </p>
+                    <p>
+                        Agora veja como fica o documento digitado no editor de código e como aparece no navegador. Lembrando que aqui estamos apresentando o HTML puro. Para ver ele estilizado continue na explicação do CSS.
+                    </p>
+                    <div class="resumoImagens">
+                        <div>
+                            <img src="./exemplo/exemploHtml.png" alt="Imagem do editor com o código digitado.">
+                        </div>
+                        <div>
+                            <img src="./exemplo/navegadorHtml.png" alt="Imagem mostrando a impressão do código na tela do navegador.">
+                        </div>
+                    </div>
+                    <p>
+                        Continue no artigo de CSS para acompanhar a estilização desse documento e após isso vá para o artigo JavaScript para ver como iremos inserir alguns exemplos na prática. 
+                    </p>
+                </div>
             </div>
             <!-- -------------------------------------- -->
             <div class="resumoCss">
@@ -376,6 +416,28 @@
                     O CSS não é uma linguagem de programação mas sim uma forma de estilização do documento que é apresentado na tela. Quando criamos um documento em HTML ele fica praticamente um bloco abaixo do outro, sem nenhum tipo de estilização. Antes era possível realizar algumas estilizações com o HTML, mas isso mudou e vem ficando cada vez mais fora de uso, pois o HTML é um documento que inserimos conteúdo com sentido e não apenas por estilo, a parte de estilização nós deixamos com o CSS.
                     Para utilizar o CSS nós criamos um arquivo ".css" e ligamos ele com um link ao documento ".html". Também podemos fazer a estilização inline, colocando cada código CSS dentro das tags HTML, mas essa não é uma técnica bem vista pelas boas práticas. Também podemos abrir uma tag style no "head" no HTML e inserir o CSS. Mas também não é recomendado pelas boas práticas da programação.
                 </p>
+                <div>
+                    <h3>
+                        Dando continuidade, vamos ver de fato a estilização do CSS funcionando.
+                    </h3>
+                    <p>
+                        Antes de iniciar, vamos ver uma coisa interessante que faz parte do HTML, mas que devemos saber ao usar o CSS.
+                    </p>
+                    <p>
+                        Veja abaixo que quando inserimos uma tag no HTML ela oculpa toda uma caixa que vai do lado esquerdo da tela ao lado direito, e se apenas inserir-mos o conteúdo um após o outro eles irão ficar um abaixo do outro e todos eles ocupam toda uma caixa. Você verá com o passar do tempo que o entendimento sobre isso fará sentido quando estiver colocando itens um ao lado do outro, já que para fazer isso teremos que alterar a configuração da caixa em que a tag HTML está inserida.
+                    </p>
+                    <p>
+                        A primeira imagem retrada o que foi explicado anteriormente na tela do navegador. E a segunda imagem é o que normalmente vemos quando abrimos o inspecionar do navegador para conseguirmos enxergar melhor nosso documento no navegador. Para abrir o inspecionar é só clicar com o botão direito do mouse e clicar em inspecionar.
+                    </p>
+                    <div class="resumoImagens">
+                        <div>
+                            <img src="./exemplo/explica01.png" alt="Imagem do editor com o código digitado.">
+                        </div>
+                        <div>
+                            <img src="./exemplo/explica02.png" alt="Imagem mostrando o resultado do código CSS na tela do navegador.">
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- -------------------------------------- -->
             <div class="resumoJs">
